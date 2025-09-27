@@ -1,0 +1,81 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+#include <math.h>
+#include <sstream>
+#include <thread>
+#include "sum_cdi.h"
+using namespace std;
+
+    long long int ar[10]={9,99,999,9999,99999,999999,9999999,99999999,999999999,9999999999};
+    long long int nmb=0;
+    long long int dft=9;
+    int preci=0;
+    int optn=0;
+    string fnd;
+    long double rst=0;
+
+int lp(long long int dft){
+     rst=0;
+     fnd.clear();
+     rst=(long double)nmb/(long double)dft;
+    cout<<std::setprecision(preci)<<nmb << " / " << std::setprecision(preci) << dft << " ::== " << std::setprecision(preci) <<rst <<"\n";
+    stringstream amk;
+    amk<<std::setprecision(preci)<<rst ;
+    string smlk;
+    smlk.clear();
+    smlk+=amk.str();
+    cout<<"as String " << smlk <<"\n";
+    char mk;
+    int lk=0;
+    int idx=0;
+    for(int i=0;i<=smlk.size()-1;i++){
+        mk=smlk.at(i);
+        if(mk=='.'){idx=i;}
+        if(idx!=0){break;}
+    }
+    if(idx!=0){
+    mk=smlk.at(idx+1);
+    lk=stoi(&mk);
+    cout<<"@idx " << idx << " value of " << lk <<"\n";}
+
+    if(idx==0){
+     lk=0;
+     cout<<"@idx value is 0 \n";
+    }
+    sum_cdi *dcms= new sum_cdi();
+    dcms->cld=0;
+    int dc=0;
+    dc=dcms->cdis(nmb,0);
+    if(lk==dc){fnd+=" SAME @ ";
+               fnd+=to_string(dft);
+               }
+    if(lk!=dc && lk!=0){fnd.clear(); fnd+=" Not Found ";}
+    if(lk!=dc && lk==0 && dc==9){fnd.clear(); fnd+=" Full Range ";}
+    if(lk!=dc && lk!=0)
+    cout<<"for number " << std::setprecision(preci) <<nmb << " sum of digit ::== " << dc <<" " << fnd <<"\n";
+  return 0;
+}
+
+
+int main(int argc,char** argv)
+{
+    cout<<"voyeristic behaviours and others have fun\n";
+    cout<<"enter ur number , press 0 for default or 1 to enter ur value ,2 to automate it , precision \n";
+
+    nmb=stoll(argv[1]);
+    optn=stoi(argv[2]);
+    preci=stoi(argv[3]);
+    if(optn==0){lp(dft);}
+    if(optn==1){cout<<"enter ur new default based on 9 or 99 or 9999 \n"; cin>>dft; lp(dft);}
+    if(optn==2){
+
+       for(int i=0;i<=9;i++){
+           cout<<"----------------\n";
+           lp(ar[i]);
+           cout<<"----------------\n";
+           std::this_thread::sleep_for(std::chrono::milliseconds(500));
+       }
+    }
+    return 0;
+}
