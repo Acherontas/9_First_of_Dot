@@ -17,21 +17,23 @@ using namespace std;
     long long int argn_ed=0;
     int space_of=0;
     int ska=0;
+    int arska[10],arka=0,fil=0;
+    int sks=0;
     string fnd;
     long double rst=0;
     string st;
 
-int lp(long long int dft){
+int lp(long long int dft,int lpi){
      rst=0;
      fnd.clear();
      rst=(long double)nmb/(long double)dft;
-    cout<<std::setprecision(preci)<<nmb << " / " << std::setprecision(preci) << dft << " ::== " << std::setprecision(preci) <<rst <<"\n";
+    if(lpi==0){cout<<std::setprecision(preci)<<nmb << " / " << std::setprecision(preci) << dft << " ::== " << std::setprecision(preci) <<rst <<"\n";}
     stringstream amk;
     amk<<std::setprecision(preci)<<rst ;
     string smlk;
     smlk.clear();
     smlk+=amk.str();
-    cout<<"as String " << smlk <<"\n";
+    if(lpi==0){cout<<"as String " << smlk <<"\n";}
     char mk;
     int lk=0;
     int idx=0;
@@ -43,12 +45,12 @@ int lp(long long int dft){
     if(idx!=0){
                 mk=smlk.at(idx+1);
                 lk=stoi(&mk);
-                cout<<"@idx " << idx << " value of " << lk <<"\n";
+                if(lpi==0){cout<<"@idx " << idx << " value of " << lk <<"\n";}
     }
 
     if(idx==0){
      lk=0;
-     cout<<"@idx value is 0 \n";
+     if(lpi==0){cout<<"@idx value is 0 \n";}
     }
     sum_cdi *dcms= new sum_cdi();
     dcms->cld=0;
@@ -59,13 +61,21 @@ int lp(long long int dft){
                fnd+=" SAME @ ";
                fnd+=to_string(dft);
                rgn=dft;
+
+              if(fil==0){
+               arska[arka]=dft;
+               arka+=1;
+               }
+
               }
     if(lk!=dc && lk!=0){fnd.clear(); fnd+=" Not Found "; goto A;}
     if(lk!=dc && lk==0 && dc==9){fnd.clear(); fnd+=" Full Range "; goto A;}
     if(lk!=dc && lk==0){fnd.clear(); fnd+=" Not Found "; goto A;}
-    A:cout<<"for number " << std::setprecision(preci) <<nmb << " sum of digit ::== " << dc <<" " << fnd <<"\n";
+    A:if(lpi==0){cout<<"for number " << std::setprecision(preci) <<nmb << " sum of digit ::== " << dc <<" " << fnd <<"\n";}
     if(ska==0){
          st+="\n";
+         //st+="-----------------------------------------------";
+         //st+="\n";
          st+=to_string(nmb);
          st+=" '/' ";
          st+=to_string(dft);
@@ -78,6 +88,7 @@ int lp(long long int dft){
          st+=to_string(dc);
          st+=" ";
          st+=fnd;
+         //st+="------------------------------------------------";
          st+="\n";
     }
   return 0;
@@ -96,27 +107,49 @@ int main(int argc,char** argv)
     ska=stoi(argv[4]);
     argn_st=stoll(argv[5]);
     argn_ed=stoll(argv[6]);
-    if(optn==0){lp(dft);}
-    if(optn==1){cout<<"enter ur new default based on 9 or 99 or 9999 \n"; cin>>dft; lp(dft);}
+    if(optn==0){lp(dft,0);}
+    if(optn==1){cout<<"enter ur new default based on 9 or 99 or 9999 \n"; cin>>dft; lp(dft,0);}
     if(optn==2){
        for(int i=0;i<=9;i++){
            cout<<"----------------\n";
-           lp(ar[i]);
+           lp(ar[i],0);
            cout<<"----------------\n";
            std::this_thread::sleep_for(std::chrono::milliseconds(500));
        }
     }
     cout<<"\n";
     if(ska==0){
+       fil=1;
        st.clear();
        space_of=argn_ed-argn_st;
-       for(int i=0;i<=space_of;i++){
+       //cout<<"arka value is " << arka <<"\n";
           cout<<"---------\n";
-          nmb=argn_st+i;
-          lp(rgn);
-          cout<<"---------\n";
-       }
-       cout<<st <<"\n";
+          if(arka==1){
+                   //cout<<"Entering internal arka 1\n";
+                   for(int i=0;i<=space_of;i++){
+                        nmb=argn_st+i;
+                        lp(arska[0],1);
+                     }
+                   cout<<st<<"\n";
+                     }
+          if(arka>1){
+                   // sks=0;sks=nmb;nmb=sks;
+                    cout<<" -----> Multiple Values matches the criteria u want to prove. If you want salat(d) you can go and eat\n";
+                           for(int k=0;k<=arka-1;k++){
+                                               //sks=0;
+                                               st.clear();
+                                               cout<<"\n";
+                                               cout<<" -----> using value of " <<arska[k] <<"\n";
+                                               for(int j=0;j<=space_of;j++){
+                                                        nmb=argn_st+j;
+                                                        lp(arska[k],1);
+                                                      }
+                                                cout<<st <<"\n";
+                                                cout<<" -----> end of "<< arska[k] <<"\n";
+                           }
+                    }
+          cout<<"\n";
+          cout<<"  -----> End of Multiple Values \n";
     }
     return 0;
 }

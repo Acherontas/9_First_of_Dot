@@ -17,6 +17,8 @@ using namespace std;
     long long int argn_ed=0;
     int space_of=0;
     int ska=0;
+    int arska[10],arka=0,fil=0;
+    int sks=0;
     string fnd;
     long double rst=0;
     string st;
@@ -59,18 +61,35 @@ int lp(long long int dft){
                fnd+=" SAME @ ";
                fnd+=to_string(dft);
                rgn=dft;
+
+              if(fil==0){
+               arska[arka]=dft;
+               arka+=1;
+               }
+
               }
     if(lk!=dc && lk!=0){fnd.clear(); fnd+=" Not Found "; goto A;}
     if(lk!=dc && lk==0 && dc==9){fnd.clear(); fnd+=" Full Range "; goto A;}
     if(lk!=dc && lk==0){fnd.clear(); fnd+=" Not Found "; goto A;}
     A:cout<<"for number " << std::setprecision(preci) <<nmb << " sum of digit ::== " << dc <<" " << fnd <<"\n";
     if(ska==0){
+         st+="\n";
+         //st+="-----------------------------------------------";
+         //st+="\n";
          st+=to_string(nmb);
          st+=" '/' ";
          st+=to_string(dft);
-         st+=" '=' ";
+         st+=" '::==' ";
          st+=to_string(rst);
-         
+         st+=" ";
+         st+="@idx value : " ;
+         st+=to_string(lk);
+         st+=" with sum of digit : ";
+         st+=to_string(dc);
+         st+=" ";
+         st+=fnd;
+         //st+="------------------------------------------------";
+         st+="\n";
     }
   return 0;
 }
@@ -100,14 +119,36 @@ int main(int argc,char** argv)
     }
     cout<<"\n";
     if(ska==0){
-       st=0;
+       fil=1;
+       st.clear();
        space_of=argn_ed-argn_st;
-       for(int i=0;i<=space_of;i++){
           cout<<"---------\n";
-          nmb=argn_st+i;
-          lp(rgn);
+          if(arka==0){
+                   for(int i=0;i<=space_of;i++){
+                        nmb=argn_st+i;
+                        lp(rgn);
+                     }
+                     }
+          if(arka>0){
+                   // sks=0;sks=nmb;nmb=sks;
+                    cout<<" -----> Multiple Values matches the criteria u want to prove. If you want salat(d) you can go and eat\n";
+                           for(int k=0;k<=arka-1;k++){
+                                               //sks=0;
+                                               st.clear();
+                                               cout<<" ----> using value of " <<arska[k] <<"\n";
+                                               for(int j=0;j<=space_of;j++){
+                                                        nmb=argn_st+j;
+                                                        
+                                                        lp(arska[k]);
+                                                        cout<<" end of "<< arska[k] <<"\n";
+                                                      }
+                                                      
+                                                cout<<st <<"\n";
+                                                
+                           }
+                           
+                    }
           cout<<"---------\n";
-       }
     }
     return 0;
 }

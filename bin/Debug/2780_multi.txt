@@ -1,0 +1,90 @@
+voyeristic behaviours and others have fun
+enter ur number , press 0 for default or 1 to enter ur value ,2 to automate it , precision ,  
+enter 0 for range in the found [9]! or 1 to exit range start number , range end number 
+----------------
+2785 / 9 ::== 309.444444444
+as String 309.444444444
+@idx 3 value of 4
+for number 2785 sum of digit ::== 4  SAME @ 9
+----------------
+----------------
+2785 / 99 ::== 28.1313131313
+as String 28.1313131313
+@idx 2 value of 1
+for number 2785 sum of digit ::== 4  Not Found 
+----------------
+----------------
+2785 / 999 ::== 2.78778778779
+as String 2.78778778779
+@idx 1 value of 7
+for number 2785 sum of digit ::== 4  Not Found 
+----------------
+----------------
+2785 / 9999 ::== 0.278527852785
+as String 0.278527852785
+@idx 1 value of 2
+for number 2785 sum of digit ::== 4  Not Found 
+----------------
+----------------
+2785 / 99999 ::== 0.0278502785028
+as String 0.0278502785028
+@idx 1 value of 0
+for number 2785 sum of digit ::== 4  Not Found 
+----------------
+----------------
+2785 / 999999 ::== 0.002785002785
+as String 0.002785002785
+@idx 1 value of 0
+for number 2785 sum of digit ::== 4  Not Found 
+----------------
+----------------
+2785 / 9999999 ::== 0.00027850002785
+as String 0.00027850002785
+@idx 1 value of 0
+for number 2785 sum of digit ::== 4  Not Found 
+----------------
+----------------
+2785 / 99999999 ::== 2.78500002785e-05
+as String 2.78500002785e-05
+@idx 1 value of 7
+for number 2785 sum of digit ::== 4  Not Found 
+----------------
+----------------
+2785 / 999999999 ::== 2.78500000279e-06
+as String 2.78500000279e-06
+@idx 1 value of 7
+for number 2785 sum of digit ::== 4  Not Found 
+----------------
+----------------
+2785 / 9999999999 ::== 2.78500000028e-07
+as String 2.78500000028e-07
+@idx 1 value of 7
+for number 2785 sum of digit ::== 4  Not Found 
+----------------
+
+---------
+
+2780 '/' 9 '::==' 308.888889 @idx value : 8 with sum of digit : 8  SAME @ 9
+
+2781 '/' 9 '::==' 309.000000 @idx value : 0 with sum of digit : 9  Full Range 
+
+2782 '/' 9 '::==' 309.111111 @idx value : 1 with sum of digit : 1  SAME @ 9
+
+2783 '/' 9 '::==' 309.222222 @idx value : 2 with sum of digit : 2  SAME @ 9
+
+2784 '/' 9 '::==' 309.333333 @idx value : 3 with sum of digit : 3  SAME @ 9
+
+2785 '/' 9 '::==' 309.444444 @idx value : 4 with sum of digit : 4  SAME @ 9
+
+2786 '/' 9 '::==' 309.555556 @idx value : 5 with sum of digit : 5  SAME @ 9
+
+2787 '/' 9 '::==' 309.666667 @idx value : 6 with sum of digit : 6  SAME @ 9
+
+2788 '/' 9 '::==' 309.777778 @idx value : 7 with sum of digit : 7  SAME @ 9
+
+2789 '/' 9 '::==' 309.888889 @idx value : 8 with sum of digit : 8  SAME @ 9
+
+2790 '/' 9 '::==' 310.000000 @idx value : 0 with sum of digit : 9  Full Range 
+
+
+  -----> End of Multiple Values 

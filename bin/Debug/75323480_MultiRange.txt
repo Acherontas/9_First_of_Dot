@@ -1,0 +1,146 @@
+voyeristic behaviours and others have fun
+enter ur number , press 0 for default or 1 to enter ur value ,2 to automate it , precision ,  
+enter 0 for range in the found [9]! or 1 to exit range start number , range end number 
+----------------
+75323487 / 9 ::== 8369276.33333
+as String 8369276.33333
+@idx 7 value of 3
+for number 75323487 sum of digit ::== 3  SAME @ 9
+----------------
+----------------
+75323487 / 99 ::== 760843.30303
+as String 760843.30303
+@idx 6 value of 3
+for number 75323487 sum of digit ::== 3  SAME @ 99
+----------------
+----------------
+75323487 / 999 ::== 75398.8858859
+as String 75398.8858859
+@idx 5 value of 8
+for number 75323487 sum of digit ::== 3  Not Found 
+----------------
+----------------
+75323487 / 9999 ::== 7533.1020102
+as String 7533.1020102
+@idx 4 value of 1
+for number 75323487 sum of digit ::== 3  Not Found 
+----------------
+----------------
+75323487 / 99999 ::== 753.242402424
+as String 753.242402424
+@idx 3 value of 2
+for number 75323487 sum of digit ::== 3  Not Found 
+----------------
+----------------
+75323487 / 999999 ::== 75.3235623236
+as String 75.3235623236
+@idx 2 value of 3
+for number 75323487 sum of digit ::== 3  SAME @ 999999
+----------------
+----------------
+75323487 / 9999999 ::== 7.53234945323
+as String 7.53234945323
+@idx 1 value of 5
+for number 75323487 sum of digit ::== 3  Not Found 
+----------------
+----------------
+75323487 / 99999999 ::== 0.753234877532
+as String 0.753234877532
+@idx 1 value of 7
+for number 75323487 sum of digit ::== 3  Not Found 
+----------------
+----------------
+75323487 / 999999999 ::== 0.0753234870753
+as String 0.0753234870753
+@idx 1 value of 0
+for number 75323487 sum of digit ::== 3  Not Found 
+----------------
+----------------
+75323487 / 9999999999 ::== 0.00753234870075
+as String 0.00753234870075
+@idx 1 value of 0
+for number 75323487 sum of digit ::== 3  Not Found 
+----------------
+
+---------
+ -----> Multiple Values matches the criteria u want to prove. If you want salat(d) you can go and eat
+
+ -----> using value of 9
+
+75323480 '/' 9 '::==' 8369275.555556 @idx value : 5 with sum of digit : 5  SAME @ 9
+
+75323481 '/' 9 '::==' 8369275.666667 @idx value : 6 with sum of digit : 6  SAME @ 9
+
+75323482 '/' 9 '::==' 8369275.777778 @idx value : 7 with sum of digit : 7  SAME @ 9
+
+75323483 '/' 9 '::==' 8369275.888889 @idx value : 8 with sum of digit : 8  SAME @ 9
+
+75323484 '/' 9 '::==' 8369276.000000 @idx value : 0 with sum of digit : 9  Full Range 
+
+75323485 '/' 9 '::==' 8369276.111111 @idx value : 1 with sum of digit : 1  SAME @ 9
+
+75323486 '/' 9 '::==' 8369276.222222 @idx value : 2 with sum of digit : 2  SAME @ 9
+
+75323487 '/' 9 '::==' 8369276.333333 @idx value : 3 with sum of digit : 3  SAME @ 9
+
+75323488 '/' 9 '::==' 8369276.444444 @idx value : 4 with sum of digit : 4  SAME @ 9
+
+75323489 '/' 9 '::==' 8369276.555556 @idx value : 5 with sum of digit : 5  SAME @ 9
+
+75323490 '/' 9 '::==' 8369276.666667 @idx value : 6 with sum of digit : 6  SAME @ 9
+
+ -----> end of 9
+
+ -----> using value of 99
+
+75323480 '/' 99 '::==' 760843.232323 @idx value : 2 with sum of digit : 5  Not Found 
+
+75323481 '/' 99 '::==' 760843.242424 @idx value : 2 with sum of digit : 6  Not Found 
+
+75323482 '/' 99 '::==' 760843.252525 @idx value : 2 with sum of digit : 7  Not Found 
+
+75323483 '/' 99 '::==' 760843.262626 @idx value : 2 with sum of digit : 8  Not Found 
+
+75323484 '/' 99 '::==' 760843.272727 @idx value : 2 with sum of digit : 9  Not Found 
+
+75323485 '/' 99 '::==' 760843.282828 @idx value : 2 with sum of digit : 1  Not Found 
+
+75323486 '/' 99 '::==' 760843.292929 @idx value : 2 with sum of digit : 2  SAME @ 99
+
+75323487 '/' 99 '::==' 760843.303030 @idx value : 3 with sum of digit : 3  SAME @ 99
+
+75323488 '/' 99 '::==' 760843.313131 @idx value : 3 with sum of digit : 4  Not Found 
+
+75323489 '/' 99 '::==' 760843.323232 @idx value : 3 with sum of digit : 5  Not Found 
+
+75323490 '/' 99 '::==' 760843.333333 @idx value : 3 with sum of digit : 6  Not Found 
+
+ -----> end of 99
+
+ -----> using value of 999999
+
+75323480 '/' 999999 '::==' 75.323555 @idx value : 3 with sum of digit : 5  Not Found 
+
+75323481 '/' 999999 '::==' 75.323556 @idx value : 3 with sum of digit : 6  Not Found 
+
+75323482 '/' 999999 '::==' 75.323557 @idx value : 3 with sum of digit : 7  Not Found 
+
+75323483 '/' 999999 '::==' 75.323558 @idx value : 3 with sum of digit : 8  Not Found 
+
+75323484 '/' 999999 '::==' 75.323559 @idx value : 3 with sum of digit : 9  Not Found 
+
+75323485 '/' 999999 '::==' 75.323560 @idx value : 3 with sum of digit : 1  Not Found 
+
+75323486 '/' 999999 '::==' 75.323561 @idx value : 3 with sum of digit : 2  Not Found 
+
+75323487 '/' 999999 '::==' 75.323562 @idx value : 3 with sum of digit : 3  SAME @ 999999
+
+75323488 '/' 999999 '::==' 75.323563 @idx value : 3 with sum of digit : 4  Not Found 
+
+75323489 '/' 999999 '::==' 75.323564 @idx value : 3 with sum of digit : 5  Not Found 
+
+75323490 '/' 999999 '::==' 75.323565 @idx value : 3 with sum of digit : 6  Not Found 
+
+ -----> end of 999999
+
+  -----> End of Multiple Values 
