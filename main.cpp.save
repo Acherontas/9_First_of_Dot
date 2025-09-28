@@ -12,8 +12,14 @@ using namespace std;
     long long int dft=9;
     int preci=0;
     int optn=0;
+    int rgn=0;
+    long long int argn_st=0;
+    long long int argn_ed=0;
+    int space_of=0;
+    int ska=0;
     string fnd;
     long double rst=0;
+    string st;
 
 int lp(long long int dft){
      rst=0;
@@ -35,9 +41,10 @@ int lp(long long int dft){
         if(idx!=0){break;}
     }
     if(idx!=0){
-    mk=smlk.at(idx+1);
-    lk=stoi(&mk);
-    cout<<"@idx " << idx << " value of " << lk <<"\n";}
+                mk=smlk.at(idx+1);
+                lk=stoi(&mk);
+                cout<<"@idx " << idx << " value of " << lk <<"\n";
+    }
 
     if(idx==0){
      lk=0;
@@ -47,13 +54,24 @@ int lp(long long int dft){
     dcms->cld=0;
     int dc=0;
     dc=dcms->cdis(nmb,0);
-    if(lk==dc){fnd+=" SAME @ ";
+    if(lk==dc){
+               rgn=0;
+               fnd+=" SAME @ ";
                fnd+=to_string(dft);
-               }
-    if(lk!=dc && lk!=0){fnd.clear(); fnd+=" Not Found ";}
-    if(lk!=dc && lk==0 && dc==9){fnd.clear(); fnd+=" Full Range ";}
-    if(lk!=dc && lk!=0)
-    cout<<"for number " << std::setprecision(preci) <<nmb << " sum of digit ::== " << dc <<" " << fnd <<"\n";
+               rgn=dft;
+              }
+    if(lk!=dc && lk!=0){fnd.clear(); fnd+=" Not Found "; goto A;}
+    if(lk!=dc && lk==0 && dc==9){fnd.clear(); fnd+=" Full Range "; goto A;}
+    if(lk!=dc && lk==0){fnd.clear(); fnd+=" Not Found "; goto A;}
+    A:cout<<"for number " << std::setprecision(preci) <<nmb << " sum of digit ::== " << dc <<" " << fnd <<"\n";
+    if(ska==0){
+         st+=to_string(nmb);
+         st+=" '/' ";
+         st+=to_string(dft);
+         st+=" '=' ";
+         st+=to_string(rst);
+         
+    }
   return 0;
 }
 
@@ -61,20 +79,34 @@ int lp(long long int dft){
 int main(int argc,char** argv)
 {
     cout<<"voyeristic behaviours and others have fun\n";
-    cout<<"enter ur number , press 0 for default or 1 to enter ur value ,2 to automate it , precision \n";
+    cout<<"enter ur number , press 0 for default or 1 to enter ur value ,2 to automate it , precision ,  \n";
+    cout<<"enter 0 for range in the found [9]! or 1 to exit range start number , range end number \n";
 
     nmb=stoll(argv[1]);
     optn=stoi(argv[2]);
     preci=stoi(argv[3]);
+    ska=stoi(argv[4]);
+    argn_st=stoll(argv[5]);
+    argn_ed=stoll(argv[6]);
     if(optn==0){lp(dft);}
     if(optn==1){cout<<"enter ur new default based on 9 or 99 or 9999 \n"; cin>>dft; lp(dft);}
     if(optn==2){
-
        for(int i=0;i<=9;i++){
            cout<<"----------------\n";
            lp(ar[i]);
            cout<<"----------------\n";
            std::this_thread::sleep_for(std::chrono::milliseconds(500));
+       }
+    }
+    cout<<"\n";
+    if(ska==0){
+       st=0;
+       space_of=argn_ed-argn_st;
+       for(int i=0;i<=space_of;i++){
+          cout<<"---------\n";
+          nmb=argn_st+i;
+          lp(rgn);
+          cout<<"---------\n";
        }
     }
     return 0;

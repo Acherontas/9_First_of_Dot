@@ -1,0 +1,145 @@
+voyeristic behaviours and others have fun
+enter ur number , press 0 for default or 1 to enter ur value ,2 to automate it , precision ,  
+enter 0 for range in the found [9]! or 1 to exit range start number , range end number 
+----------------
+78895 / 9 ::== 8766.1111111111111111
+as String 8766.1111111111111111
+@idx 4 value of 1
+for number 78895 sum of digit ::== 1  SAME @ 9
+----------------
+----------------
+78895 / 99 ::== 796.91919191919191919
+as String 796.91919191919191919
+@idx 3 value of 9
+for number 78895 sum of digit ::== 1  Not Found 
+----------------
+----------------
+78895 / 999 ::== 78.973973973973973974
+as String 78.973973973973973974
+@idx 2 value of 9
+for number 78895 sum of digit ::== 1  Not Found 
+----------------
+----------------
+78895 / 9999 ::== 7.890289028902890289
+as String 7.890289028902890289
+@idx 1 value of 8
+for number 78895 sum of digit ::== 1  Not Found 
+----------------
+----------------
+78895 / 99999 ::== 0.78895788957889578896
+as String 0.78895788957889578896
+@idx 1 value of 7
+for number 78895 sum of digit ::== 1  Not Found 
+----------------
+----------------
+78895 / 999999 ::== 0.078895078895078895079
+as String 0.078895078895078895079
+@idx 1 value of 0
+for number 78895 sum of digit ::== 1  Not Found 
+----------------
+----------------
+78895 / 9999999 ::== 0.007889500788950078895
+as String 0.007889500788950078895
+@idx 1 value of 0
+for number 78895 sum of digit ::== 1  Not Found 
+----------------
+----------------
+78895 / 99999999 ::== 0.0007889500078895000789
+as String 0.0007889500078895000789
+@idx 1 value of 0
+for number 78895 sum of digit ::== 1  Not Found 
+----------------
+----------------
+78895 / 999999999 ::== 7.8895000078895000079e-05
+as String 7.8895000078895000079e-05
+@idx 1 value of 8
+for number 78895 sum of digit ::== 1  Not Found 
+----------------
+----------------
+78895 / 9999999999 ::== 7.8895000007889500001e-06
+as String 7.8895000007889500001e-06
+@idx 1 value of 8
+for number 78895 sum of digit ::== 1  Not Found 
+----------------
+
+---------
+78890 / 9 ::== 8765.5555555555555556
+as String 8765.5555555555555556
+@idx 4 value of 5
+for number 78890 sum of digit ::== 5  SAME @ 9
+---------
+---------
+78891 / 9 ::== 8765.6666666666666667
+as String 8765.6666666666666667
+@idx 4 value of 6
+for number 78891 sum of digit ::== 6  SAME @ 9
+---------
+---------
+78892 / 9 ::== 8765.7777777777777778
+as String 8765.7777777777777778
+@idx 4 value of 7
+for number 78892 sum of digit ::== 7  SAME @ 9
+---------
+---------
+78893 / 9 ::== 8765.8888888888888889
+as String 8765.8888888888888889
+@idx 4 value of 8
+for number 78893 sum of digit ::== 8  SAME @ 9
+---------
+---------
+78894 / 9 ::== 8766
+as String 8766
+@idx value is 0 
+for number 78894 sum of digit ::== 9  Full Range 
+---------
+---------
+78895 / 9 ::== 8766.1111111111111111
+as String 8766.1111111111111111
+@idx 4 value of 1
+for number 78895 sum of digit ::== 1  SAME @ 9
+---------
+---------
+78896 / 9 ::== 8766.2222222222222222
+as String 8766.2222222222222222
+@idx 4 value of 2
+for number 78896 sum of digit ::== 2  SAME @ 9
+---------
+---------
+78897 / 9 ::== 8766.3333333333333333
+as String 8766.3333333333333333
+@idx 4 value of 3
+for number 78897 sum of digit ::== 3  SAME @ 9
+---------
+---------
+78898 / 9 ::== 8766.4444444444444444
+as String 8766.4444444444444444
+@idx 4 value of 4
+for number 78898 sum of digit ::== 4  SAME @ 9
+---------
+---------
+78899 / 9 ::== 8766.5555555555555556
+as String 8766.5555555555555556
+@idx 4 value of 5
+for number 78899 sum of digit ::== 5  SAME @ 9
+---------
+
+78890 '/' 9 '::==' 8765.555556 @idx value : 5 with sum of digit : 5  SAME @ 9
+
+78891 '/' 9 '::==' 8765.666667 @idx value : 6 with sum of digit : 6  SAME @ 9
+
+78892 '/' 9 '::==' 8765.777778 @idx value : 7 with sum of digit : 7  SAME @ 9
+
+78893 '/' 9 '::==' 8765.888889 @idx value : 8 with sum of digit : 8  SAME @ 9
+
+78894 '/' 9 '::==' 8766.000000 @idx value : 0 with sum of digit : 9  Full Range 
+
+78895 '/' 9 '::==' 8766.111111 @idx value : 1 with sum of digit : 1  SAME @ 9
+
+78896 '/' 9 '::==' 8766.222222 @idx value : 2 with sum of digit : 2  SAME @ 9
+
+78897 '/' 9 '::==' 8766.333333 @idx value : 3 with sum of digit : 3  SAME @ 9
+
+78898 '/' 9 '::==' 8766.444444 @idx value : 4 with sum of digit : 4  SAME @ 9
+
+78899 '/' 9 '::==' 8766.555556 @idx value : 5 with sum of digit : 5  SAME @ 9
+
